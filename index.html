@@ -6,6 +6,43 @@
     <link href="style.css" rel="stylesheet" media="all" type="text/css">
   </head>
   <body>
-
+    <form method="post" action="traitement.php">
+      <fieldset>
+         <legend>Votre identité</legend>
+           <ol>
+            <li><label for="nom">Nom :</label>
+             <input type="text" name="nom" id="nom" /></li>
+            <li><label for="prenom">Prénom :</label>
+             <input type="text" name="prenom" id="prenom" /></li>
+            <li><label for="email">Adresse mail :</label>
+             <input type="email" name="email" id="email" /></li>
+         </ol>
+       </fieldset>
+       <fieldset>
+         <legend>Adresse de livraison</legend>
+          <ol>
+              <li><label for="Adresse">Adresse :</label>
+              <input type="text" name="Adresse" id="Adresse" /></li>
+              <li><label for="Code postal">Code postal :</label>
+              <input type="text" name="Code postal" id="Code postal" /></li>
+              <li><label for="Ville">Ville :</label>
+              <input type="text" name="Ville" id="Ville" /></li>
+          </ol>
+        </fieldset>
+        <fieldset>
+          <legend>Information de règlement</legend>
+            <ol>
+              <li><label for="carte bancaire">Type de carte banquaire</label></li>
+              <input type="radio" name="carte bancaire" value="VISA" id="VISA" /> <label for="VISA">VISA</label>
+              <input type="radio" name="carte bancaire" value="Mastercard" id="Mastercard" /> <label for="Mastercard">Mastercard</label>
+              <li><label for="numéro">Numéro de carte :</label>
+              <input type="text" name="numéro" id="numéro" /></li>
+              <li><label for="code">Code de sécurité :</label>
+              <input type="text" name="code" id="code"></li>
+              <li><label for="titulaire">Nom du titulaire :</label>
+              <input type="text" name="titulaire" id="titulaire"></li>
+          </ol>
+        </fieldset>
+     </form>
   </body>
 </html>
